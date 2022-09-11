@@ -82,8 +82,11 @@ public class c
 
             foreach (var prodobj in catobj.prodlist)
             {
-                Console.WriteLine("productname:" + prodobj.productname + "\nprice:" + prodobj.price);
+                Console.WriteLine("productname:" + prodobj.productname + "\tprice:" + prodobj.price);
+               
             }
+            Console.WriteLine("---------");
+
         }
         Console.WriteLine("-------------------");
         Console.WriteLine("The sortedlist:");//sorting list with respect to price
@@ -93,8 +96,10 @@ public class c
             List<prodclass> sorted = catobj.prodlist.OrderBy(prodObj => prodObj.price).ToList();
             foreach (var s in sorted)
             {
-                Console.WriteLine("productname:" + s.productname + "\nprice:" + s.price);
+                Console.WriteLine("productname:" + s.productname + "\tprice:" + s.price);
             }
+            Console.WriteLine("---------");
+
         }
 
         Console.WriteLine("-------------------");
